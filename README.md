@@ -2,27 +2,23 @@
 Application used for tracking various fitness and nutritional activities. Currently live at [http://www.augmented.fit](http://www.augmented.fit). Site is forward masking to the deployed S3 bucket, [here](http://augmented-frontend.s3-website-us-east-1.amazonaws.com). The AWS S3 bucket is a static page. This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app), and later used the command ```npm run eject``` to customize project into current state.
 
 ## TODO list ##
-- [ ] Remove Bulma component and bulma package
 - [x] Find smaller date picker (MUI picker)
+- [x] Set footer to be sticky
 - [ ] Replace time picker for one that uses modern React lifecyle methods
 - [ ] Convert base dropdown and nav bar from class to functional components
-- [ ] Create #/ routing system
-- [ ] Switch from bulma to material ui for styling
 - [ ] Convert css to global jss
 - [ ] Remove all css imports from html index page
-- [ ] Set footer to be sticky
 
 ## npm - Commands for Application ##
 The following commands are used for building, testing, and deploying the application.
 
 ```javascript
-npm run build-dev // build unminified bundle
+npm run build-dev  // build unminified bundle
 npm run build-prod // build minified bundle for prod
-npm run deploy // send build and html in dist folder to S3 (if system has configs for S3)
-npm run lint // run linter against src/js, test, and webpack directories
-npm run lint-fix // run linter and fix any issues that linter can corrects
-npm run start // build unminified bundle and server through webpack server
-npm run test // run unit tests
+npm run lint       // run linter against src/js, test, and webpack directories
+npm run lint-fix   // run linter and fix any issues that linter can corrects
+npm run start      // build unminified bundle and server through webpack server
+npm run test       // run unit tests
 ```
 
 ### General Notes ###
